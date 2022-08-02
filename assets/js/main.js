@@ -1,8 +1,15 @@
 const hamburgue = document.querySelector('.header__toggle')
-console.log('claudoi')
+
+
 /*______________Header_______________*/
 
 
-hamburgue.addEventListener('click', ()=>{
- document.body.classList.toggle('open')
-})
+
+function mostra (){
+    const menu = document.querySelector('.header__menu')
+    menu.classList.toggle('open--menu')
+    document.body.classList.toggle('open')
+}
+
+hamburgue.addEventListener('click', mostra)
+

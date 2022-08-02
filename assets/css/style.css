@@ -1,5 +1,5 @@
 /*-----------------------------------*\
-  #GOOGLE FONTS
+#GOOGLE FONTS
 \*-----------------------------------*/
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
@@ -9,7 +9,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 /*-----------------------------------*\
-  #VARIABLES
+#VARIABLES
 \*-----------------------------------*/
 
 :root {
@@ -31,54 +31,54 @@
 }
 
 /*-----------------------------------*\
-  #BASE / RESET
+#BASE / RESET
 \*-----------------------------------*/
 
 *,
-*::before,
-*::after {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+    *::before,
+    *::after {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
 
-li { list-style: none; }
+    li { list-style: none; }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
 
-img {
-   height: auto;
-}
+    img {
+        height: auto;
+    }
 
-input,
-button {
-  background: none;
-  border: none;
-  font: inherit;
-}
+    input,
+    button {
+        background: none;
+        border: none;
+        font: inherit;
+    }
 
-button {
-    cursor: pointer;
-}
+    button {
+        cursor: pointer;
+    }
 
-html {
-  font-size: 62.5%; /*62.5% = 10px = 1rem*/
-  scroll-behavior: smooth;
-}
+    html {
+        font-size: 62.5%; /*62.5% = 10px = 1rem*/
+        scroll-behavior: smooth;
+    }
 
-body {
-    font-size: 1.6rem;
-  background-color: var(--white-color);
-  color: var(--black-color);
-  overflow-x: hidden;
-}
+    body {
+        font-size: 1.6rem;
+        background-color: var(--white-color);
+        color: var(--black-color);
+        overflow-x: hidden;
+    }
 
-/*-----------------------------------*\
-  #REUSABLE CLASSES
-\*-----------------------------------*/
+    /*-----------------------------------*\
+    #REUSABLE CLASSES
+    \*-----------------------------------*/
 
 .container {
     max-width: 144rem;
@@ -86,9 +86,10 @@ body {
 }
 
 /*-----------------------------------*\
-  #HEADER + NAV
+#HEADER + NAV
 \*-----------------------------------*/
 .header{
+    padding-top: 20px;
     display: flex;
     position: fixed;
     top: 0;
@@ -97,6 +98,7 @@ body {
     z-index: 3;
 }
 
+
 .header__nav{
     width: 100%;
     display: flex;
@@ -104,11 +106,66 @@ body {
     justify-content: space-between;
 }
 
-.header__menu{
-    position: absolute;
-    top: 60px;
+.header__logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.header__image{
+    width: 24px;
+    height: 24px;
+    margin: 0 16px;
+}
+
+.logo__title{
+    font-family: var(--body-font-1);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.header__menu{
+    position: fixed;
+    top: 5rem;
+    right: 0;
+    width: 50%;
+    height: 17rem;
+    flex-direction: column;
+    z-index: 3;
+    display: none;
+    perspective: 400px;
+}
+
+.menu__item{
+    width: 100%;
+    height: 5.4rem;
+    animation: flipNavItem 200ms 0s ease forwards;
+    transform-origin: top;
+}
+
+.menu__item:nth-child(2){
+    animation-delay: 100ms;
+}
+.menu__item:nth-child(3){
+
+    animation-delay: 200ms;
+}
+
+.menu__item .menu__links{
+    background-color: var(--white-color);
+    box-shadow: -2rem 2rem 2rem rgba(0,0,0, 0.2);
+    color: var(--black-color);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu__links:hover{
+    background: var(--black-color);
+    color: var(--white-color);;
+}
 
 .header__toggle{
     padding: 1rem 0;
@@ -125,6 +182,10 @@ body {
     height: 2px;
     background-color: var(--black-color);
     position: absolute;
+}
+
+.open--menu{
+    display: inline-block;
 }
 
 .header__toggle .toggle__line:first-child{
@@ -148,60 +209,83 @@ body.open .header__toggle .toggle__line:last-child{
     transform: translateY(50%) rotate(45deg);
     transition: top 0.2s, transform 0.3s 0.1s;
 }
+
+@keyframes flipNavItem{
+    from{
+        transform: rotateX(90deg);
+        opacity: 0;
+    }
+
+    to{
+        transform: rotateX(0deg);
+    }
+}
 /*-----------------------------------*\
-  #HERO
+#HERO
+\*-----------------------------------*/
+.hero{
+    height: calc(100vh - 15rem);
+    margin-top: 150px;
+}
+
+.hero__container{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+/*-----------------------------------*\
+#FEATURED-IN
 \*-----------------------------------*/
 
 
 
 /*-----------------------------------*\
-  #FEATURED-IN
+#FEATURES
 \*-----------------------------------*/
 
 
 
 /*-----------------------------------*\
-  #FEATURES
+#MOTIVATIONS
+\*-----------------------------------*/
+
+/*-----------------------------------*\
+#LANGUAGES MINI-SECTION
 \*-----------------------------------*/
 
 
 
 /*-----------------------------------*\
-  #MOTIVATIONS
-\*-----------------------------------*/
-
-    /*-----------------------------------*\
-    #LANGUAGES MINI-SECTION
-    \*-----------------------------------*/
-
-
-
-    /*-----------------------------------*\
-    #GET-UP MINI-SECTION
-    \*-----------------------------------*/
-
-
-
-/*-----------------------------------*\
-  #PACKAGE
+#GET-UP MINI-SECTION
 \*-----------------------------------*/
 
 
 
 /*-----------------------------------*\
-  #FAQS
+#PACKAGE
 \*-----------------------------------*/
 
 
 
 /*-----------------------------------*\
-  #FOOTER
+#FAQS
 \*-----------------------------------*/
 
 
 
 /*-----------------------------------*\
-  #MEDIA QUERIES
+#FOOTER
+\*-----------------------------------*/
+
+
+
+/*-----------------------------------*\
+#MEDIA QUERIES
 \*-----------------------------------*/
 
 /*reusable classes*/
@@ -225,10 +309,10 @@ body.open .header__toggle .toggle__line:last-child{
 
 /*motivations*/
 
-    /*languages*/
+/*languages*/
 
 
-    /*get-up*/
+/*get-up*/
 
 
 /*package*/
