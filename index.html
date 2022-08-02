@@ -14,7 +14,7 @@
       - BOXICONS
     -->
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    
+
     <title>Study Website</title>
 </head>
 <body>
@@ -22,8 +22,22 @@
     <!--
       - #HEADER + #NAV
     -->
-    <header>
-
+    <header class="header container">
+       <nav class="header__nav">
+           <div class="heade__logo">
+               <img class="header__image" src="./assets//images//header_logo.png" alt="image da logo">
+                <span class="logo__title">macode.</span>
+           </div>
+           <ul class="header__menu">
+              <li class="menu__item"><a class="menu__links" href="#" target="_blank">Tutorias</a></li>
+              <li class="menu__item"><a class="menu__links" href="#" target="_blank">Case studes</a></li>
+              <li class="menu__item"><a class="menu__links" href="#" target="_blank">Resouces</a></li>
+           </ul>
+           <div class="header__toggle">
+               <div class="toggle__line"></div>
+               <div class="toggle__line"></div>
+           </div>
+       </nav>
     </header>
 
     <!--
@@ -77,7 +91,7 @@
           - #PACKAGE SECTION
         -->
         <section>
-            
+
         </section>
 
         <!--
@@ -88,14 +102,14 @@
         </section>
 
     </main>
-    
+
     <!--
       - #FOOTER
     -->
     <footer>
 
     </footer>
-    
-    <script src="assets/js/main.js"></script>
+
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>
