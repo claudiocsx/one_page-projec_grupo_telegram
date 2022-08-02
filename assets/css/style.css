@@ -128,9 +128,125 @@ body {
 /*-----------------------------------*\
   #PACKAGE
 \*-----------------------------------*/
+.package{
+  font-family: var(--body-font-1);
+}
 
+.packge__container{
+  text-align: center;
+  
+}
 
+.package__text{
+  margin: 5.8rem 4rem 1rem 4rem;
 
+}
+
+.package__text .packge__title{
+  font-weight: 700;
+  font-size: 4.8rem;
+  margin-bottom: 50px;
+  
+}
+
+.packge__subtitle{
+  font-size: 2.2rem;
+  /* line-height: 10rem; */
+  letter-spacing: 1px;
+}
+
+.packge__tables {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.packge__table {
+  width: 393px;
+  height: 488px;
+  margin-top: 8rem;
+  background: #F4F4F4;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, .2);
+  /* border: 1px solid black; */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.packge__table span img{
+ display: none;
+}
+
+.packge__table .packge__title2{
+  /* font-weight: 100; */
+  font-size: 2.4rem;
+  letter-spacing: 0.25px;
+}
+
+.packge__price{
+  
+}
+
+.packge__price h4{
+  width: 9rem;
+  position: relative;
+}
+.packge__price h4 span.sign{
+  font-size: 2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.packge__price h4 span{
+  font-size: 4.8rem;
+}
+.packge__option{
+  font-size: 2.2rem;
+}
+
+.packge__button{
+  width: 25.5rem;
+  padding: 15px 29px;
+  color: var(--first-color);
+  background-color: var(--white-color);
+  border-radius: 10px;
+  /* border: 1px solid black; */
+}
+
+.packge__table--dark {
+  transition: .7s;
+  color: var(--white-color);
+  background-color: var(--second-color);
+  
+}
+
+.packge__table--dark span img{
+  transition: .7s;
+  display: inline-block;
+  position: absolute;
+  top: 152px;
+  left: 43px;
+  width: 50px;
+}
+
+.packge__table--dark:hover{
+  transform: scale(1.05);
+} 
+
+.packge__table--dark .packge__button{
+  color: var(--black-color);
+  background-color: var(--first-color);
+}
+
+.packge__table--dark .packge__button:hover{
+  background-color: var(--first-color-alt-1);
+  font-weight: 500;
+}
 /*-----------------------------------*\
   #FAQS
 \*-----------------------------------*/
@@ -175,7 +291,28 @@ body {
 
 
 /*package*/
+@media (max-width: 600px) {
+/*   html 
+  {
+    font-size: 50%;
+  } */
 
+  .package__text
+  {
+    margin: 5.8rem 4rem 1rem 4rem;
+  
+  }
+  .packge__subtitle
+  {
+    font-size: 2.2rem;
+    line-height: 2.5rem;
+  }
+  .packge__table 
+  {
+    width: 343px;
+    height: 478.28px;
+  }
+}
 
 /*faqs*/
 
