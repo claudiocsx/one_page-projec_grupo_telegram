@@ -58,10 +58,29 @@ button {
   background: none;
   border: none;
   font: inherit;
+  font-family: 'Rubik';
 }
 
 button {
-    cursor: pointer;
+  cursor: pointer;
+}
+
+.btn--base {
+  display: flex;
+  align-items: center;
+  background-color: var(--black-color);
+  color: #fff;
+  gap: 30px;
+  padding: 24.5px 44px 24.5px 29px;
+  font-size: 2.1rem;
+  border-radius: 2px;
+  line-height: 26px;
+
+  transition: background-color ease .2s;
+}
+
+.btn--base:hover {
+  background-color: #303030;
 }
 
 html {
