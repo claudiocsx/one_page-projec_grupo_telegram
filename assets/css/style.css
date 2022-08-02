@@ -233,7 +233,23 @@ body.open .header__toggle .toggle__line:last-child{
     flex-direction: column;
 }
 
+.hero__title{
+    font-family: var(--body-font-1);
+    font-size: 4.1rem;
+    font-weight: 400;
+}
 
+.span__icon{
+    display: inline-block;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 19px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--second-color);
+    color: var(--white-color);
+}
 
 
 
