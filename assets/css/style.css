@@ -65,6 +65,27 @@ button {
   cursor: pointer;
 }
 
+body {
+    font-size: 1.6rem;
+  background-color: var(--white-color);
+  color: var(--black-color);
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 62.5%; /*62.5% = 10px = 1rem*/
+  scroll-behavior: smooth;
+}
+
+/*-----------------------------------*\
+  #REUSABLE CLASSES
+\*-----------------------------------*/
+
+.container {
+    max-width: 144rem;
+    padding-inline: 5rem;
+}
+
 .btn--base {
   display: flex;
   align-items: center;
@@ -83,26 +104,6 @@ button {
   background-color: #303030;
 }
 
-html {
-  font-size: 62.5%; /*62.5% = 10px = 1rem*/
-  scroll-behavior: smooth;
-}
-
-body {
-    font-size: 1.6rem;
-  background-color: var(--white-color);
-  color: var(--black-color);
-  overflow-x: hidden;
-}
-
-/*-----------------------------------*\
-  #REUSABLE CLASSES
-\*-----------------------------------*/
-
-.container {
-    max-width: 144rem;
-    padding-inline: 5rem;
-}
 
 /*-----------------------------------*\
   #HEADER + NAV
