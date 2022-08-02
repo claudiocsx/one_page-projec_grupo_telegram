@@ -159,8 +159,59 @@ body {
 /*-----------------------------------*\
   #FOOTER
 \*-----------------------------------*/
+.c-footer {
+  background-color: var(--black-color);
+  font-family: 'Rubik';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer__header {
+  display: flex;
+  gap: 0 19px;
+}
+
+.footer__header-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--first-color);
+}
+
+.footer__header-title {
+  font-size: 3.4rem;
+  color: #fff;
+  padding-bottom: 61px;
+}
+
+.footer__c-aside {
+  background-color: var(--first-color);
+  padding: 0 30px;
+}
 
 
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  list-style: none;
+}
+
+.footer__item {
+  font-size: 2rem;
+  font-weight: 200;
+  padding-bottom: 57px;
+}
+
+.footer-line {
+  border: 1px solid #a3a3a3;
+}
 
 /*-----------------------------------*\
   #MEDIA QUERIES
