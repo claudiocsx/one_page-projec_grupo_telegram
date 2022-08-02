@@ -151,7 +151,7 @@ body {
 
 .packge__subtitle{
   font-size: 2.2rem;
-  /* line-height: 10rem; */
+  font-weight: 300;
   letter-spacing: 1px;
 }
 
@@ -177,18 +177,15 @@ body {
   align-items: center;
   flex-wrap: wrap;
 }
-.packge__table span img{
- display: none;
-}
 
-.packge__table .packge__title2{
-  /* font-weight: 100; */
+.packge__title2 h2{
+  font-weight: 400;
   font-size: 2.4rem;
   letter-spacing: 0.25px;
 }
 
-.packge__price{
-  
+.packge__table span img{
+ display: none;
 }
 
 .packge__price h4{
@@ -197,6 +194,7 @@ body {
 }
 .packge__price h4 span.sign{
   font-size: 2rem;
+  font-weight: 400;
   position: absolute;
   top: 0;
   left: 0;
@@ -205,7 +203,8 @@ body {
 .packge__price h4 span{
   font-size: 4.8rem;
 }
-.packge__option{
+.packge__option ul li{
+  font-weight: 200;
   font-size: 2.2rem;
 }
 
@@ -215,7 +214,7 @@ body {
   color: var(--first-color);
   background-color: var(--white-color);
   border-radius: 10px;
-  /* border: 1px solid black; */
+  box-shadow: 17px 14px 13px rgb(0 0 0 / 12%);
 }
 
 .packge__table--dark {
