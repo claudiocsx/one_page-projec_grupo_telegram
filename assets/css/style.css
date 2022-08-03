@@ -166,6 +166,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 0 16px;
 }
 
 .footer__header {
@@ -207,10 +208,15 @@ body {
   list-style: none;
 }
 
-.footer__item p {
+.footer__item__link {
+  display: block;
   font-size: 2rem;
   font-weight: 200;
   padding-bottom: 57px;
+  opacity: 0.5;
+}
+
+.footer__item__link p:hover {
   opacity: 0.5;
 }
 
@@ -226,14 +232,14 @@ body {
 }
 
 .footer__social-media a i:hover {
-  opacity: 0.8;
+  opacity: 0.5;
 }
 
 .footer-copyright {
   color: #a3a3a3;
-  font-size: 1.5rem;
+  font-size: 2.2rem;
   font-weight: 200;
-  padding: 38px 0 48px 0;
+  padding: 38px 0 58px 0;
   letter-spacing: 0.25px;
 
 }
