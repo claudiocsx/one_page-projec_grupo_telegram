@@ -18,7 +18,6 @@
         <title>Study Website</title>
     </head>
     <body>
-
         <!--
             - #HEADER + #NAV
         -->
@@ -48,18 +47,46 @@
             <!--
                 - #HERO SECTION
             -->
-            <section class="hero container">
+            <section class="hero ">
                 <div class="hero__container">
-                    <div class="hero__left">
+                    <div class="hero__left container">
                         <h1 class="hero__title">Improve your<br>
                             skills by <span class="span__icon"><i class='bx bx-code-alt' ></i></span>   study<br>
                             with coding</h1>
-                        <img class="hero__img__linha" src="./assets//images/linha.png" alt="">
+                        <img class="hero__img__line" src="./assets//images/linha.png" alt="">
                         <p class="hero__desc">Create, launch, and iterate on new
-marketing campaigns without distracting
-your product team.</p>
+                            marketing campaigns without distracting
+                            your product team.</p><div>
+                            <button class="hero__btn btn--base">Try it Yourself<i class='bx bx-right-top-arrow-circle
+                            bx-md'></i></button> </div>
                     </div>
-                    <div class="hero__rigth">
+                    <div class="hero__right">
+                        <div class="right__container">
+                            <img class="rigth__img__back" src="./assets/images/Line 1.png" alt="">
+                            <div class="right__contet">
+                                <div class="right__icons">
+                                        <img class="right__icon" src="./assets/images/1.png" alt="">
+                                        <img class="right__icon" src="./assets/images/2.png" alt="">
+                                        <img class="right__icon" src="./assets/images/3.png" alt="">
+                                        <img class="right__icon" src="./assets/images/4.png" alt="">
+                                </div>
+                                <div class="right__code">
+                                    <code class="code__content">public function index()
+                                        -
+                                        $this-load-›model('feedbac"
+                                        $data['feedbacks'] = $this- fee
+                                        if(count ($data['feedbacks']) §
+                                        $this÷load-›view('admin/feedbl
+                                        try else {
+                                        t
+                                        // you can change the new variable
+                                        }
+                                        // Controller Feedback pada method
+                                        $this-load-›view('admin/feedback</code>
+                                </div>
+                            </div>
+                        </div>
+                        <img class="right_img" src="./assets/images/Pexels Photo by Italo Melo.png" alt="">
 
                     </div>
                 </div>
@@ -114,15 +141,29 @@ your product team.</p>
 
             </section>
 
-        </main>
 
-        <!--
-            - #FOOTER
-        -->
-        <footer>
+            <!--
+                - #FOOTER
+            -->
+            <footer class="c-footer">
+                <aside class="footer__c-aside">
+                    <button class="btn--base">Get started<i class='bx bx-right-top-arrow-circle bx-md'></i></button>
+                </aside>
 
-        </footer>
+                <div class="footer__header">
+                    <div class="footer__header-icon">
+                        <i class='bx bx-chevron-right'></i>
+                    </div>
+                    <h2 class="footer__header-title">Macode</h2>
+                </div>
 
-        <script src="./assets/js/main.js"></script>
+                <ul class="footer__list">
+                    <li class="footer__item">Tutorials</li>
+                    <li class="footer__item">Case Studies</li>
+                    <li class="footer__item">Resources</li>
+                </ul>
+            </footer>
+
+            <script src="./assets/js/main.js"></script>
     </body>
 </html>
