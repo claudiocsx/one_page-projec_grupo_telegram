@@ -169,9 +169,73 @@ body {
   padding: 0 16px;
 }
 
+/* .container__aside {
+  position: absolute;
+  display: flex;
+  background-color: red;
+} */
+
+.footer__aside {
+  position: relative;
+  top: -110px;
+  width: calc(100% - 30px);
+  background-color: var(--first-color);
+  margin: 0 30px;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 8.42861px 50.973px 8.82997px rgba(221, 242, 71, 0.3);
+}
+
+.aside__info {
+  display: flex;
+  flex-direction: column;
+  gap: 15.36px 0;
+}
+
+.aside__title {
+  font-family: var(--body-font-2);
+  font-size: 2.3rem;
+  font-weight: 800;
+  text-align: center;
+  line-height: 29px;
+  letter-spacing: -0.08em;
+}
+
+.aside__text {
+  font-weight: 250;
+  font-size: 1.4rem;
+  line-height: 17px;
+  text-align: center;
+  padding-bottom: 17.18px;
+}
+
+.aside__btn {
+  display: flex;
+  flex-direction: column;
+  gap: 18.28px;
+}
+
+.aside__btn-base {
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  padding: 10px 0;
+  line-height: 12px;
+  gap: 0 14.22px;
+}
+
+.aside__btn--desable {
+  background-color: rgba(1, 1, 1, 0.25);
+}
+
+.aside__btn--desable:hover {
+  background-color: rgba(1, 1, 1, 0.45);
+}
+
 .footer__header {
   display: flex;
   gap: 0 19px;
+  margin-top: -86.55px;
 }
 
 .footer__header-icon {
@@ -193,12 +257,6 @@ body {
   color: #fff;
   padding-bottom: 61px;
 }
-
-.footer__c-aside {
-  background-color: var(--first-color);
-  padding: 0 30px;
-}
-
 
 .footer__list {
   display: flex;
