@@ -159,7 +159,13 @@ body {
 /*-----------------------------------*\
   #FOOTER
 \*-----------------------------------*/
+.exemplo {
+  height:500px;
+  background-color: red;
+}
+
 .c-footer {
+  width: 100%;
   background-color: var(--black-color);
   font-family: 'Rubik';
   display: flex;
@@ -169,18 +175,13 @@ body {
   padding: 0 16px;
 }
 
-/* .container__aside {
-  position: absolute;
-  display: flex;
-  background-color: red;
-} */
 
 .footer__aside {
   position: relative;
   top: -110px;
   width: calc(100% - 30px);
+  max-width: 1178px;
   background-color: var(--first-color);
-  margin: 0 30px;
   padding: 30px;
   border-radius: 8px;
   box-shadow: 0px 8.42861px 50.973px 8.82997px rgba(221, 242, 71, 0.3);
@@ -213,6 +214,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 18.28px;
+  margin: 0 auto;
 }
 
 .aside__btn-base {
@@ -232,10 +234,13 @@ body {
   background-color: rgba(1, 1, 1, 0.45);
 }
 
+.footer__info {
+  margin-top: -86.55px;
+}
+
 .footer__header {
   display: flex;
   gap: 0 19px;
-  margin-top: -86.55px;
 }
 
 .footer__header-icon {
@@ -347,4 +352,82 @@ body {
 
 
 /*footer*/
+@media (min-width: 480px) {
+  .aside__title {
+    font-size: 2.8rem;
+    line-height: 37px;
+  }
 
+  .aside__text {
+    font-size: 1.8rem;
+  }
+
+  .aside__btn-base {
+    font-size: 1.4rem;
+    padding: 20px 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer__aside {
+    padding: 30px 50px;
+  }
+
+  .aside__title {
+    font-size: 3.8rem;
+    line-height: 50px;
+  }
+
+  .aside__text {
+    font-size: 2.2rem;
+    line-height: 42px;
+    padding-bottom: 38px;
+  }
+
+  .aside__btn {
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .aside__btn-base {
+    width: 236px;
+    padding: 24.5px 0;
+  }
+}
+
+@media (min-width: 1238px) {
+  .footer__aside {
+    padding: 50px 201px;
+    top: -210px;
+  }
+
+  .aside__title {
+    font-size: 5.6rem;
+    line-height: 70px;
+  }
+
+  .aside__text {
+    font-size: 3.2rem;
+    line-height: 42px;
+    padding-bottom: 38px;
+  }
+
+  .footer__info {
+    width: 1142px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer__list {
+    flex-direction: row;
+    gap: 78px;
+  }
+
+  .footer__item__link {
+    opacity: 1;
+  }
+
+  .footer__social-media {
+    width: 1142px;
+  }
+}
