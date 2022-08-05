@@ -164,6 +164,8 @@ html {
 /*-----------------------------------*\
 #HEADER + NAV
 \*-----------------------------------*/
+
+@media screen and (max-width: 760px){
 .header{
     background-color: #fff;
     padding: 20px;
@@ -234,6 +236,8 @@ html {
     color: var(--black-color);
     width: 100%;
     height: 100%;
+    font-size: 2rem;
+    font-family: var(--body-font-2);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -297,6 +301,7 @@ body.open .header__toggle .toggle__line:last-child{
         transform: rotateX(0deg);
     }
 }
+}
 /*-----------------------------------*\
 #HERO
 \*-----------------------------------*/
@@ -311,8 +316,8 @@ body.open .header__toggle .toggle__line:last-child{
 }
 
 .hero__title{
-    font-family: var(--body-font-1);
-    font-size: 4.1rem;
+    font-family: var(--body-font-2);
+    font-size: var(--h1-font-size);
     font-weight: 400;
 }
 
@@ -341,15 +346,20 @@ body.open .header__toggle .toggle__line:last-child{
 }
 
 .hero__btn{
-    margin-top: 30px;
+    padding: 12px 30px;
+    width: 177px;
+    height: 59px;
+    margin-top: 44px;
+    font-size: 1.2rem;
 }
+
 
 .hero__right{
     position: relative;
     display: flex;
     background-color: var(--second-color);;
     width: 100%;
-    height: 100vh;
+    height: 500px;
     margin-top: 87px;
 }
 
@@ -378,7 +388,7 @@ body.open .header__toggle .toggle__line:last-child{
 
 .right__contet{
     position: absolute;
-    top: 400px;
+    top: 220px;
     right: 90px;
     display: flex;
     padding: 10px;
@@ -390,7 +400,7 @@ body.open .header__toggle .toggle__line:last-child{
 
 .rigth__img__back{
     position: absolute;
-    top: 328px;
+    top: 120px;
     right: 0;
     width: 359px;
     height: 251px;
@@ -528,8 +538,73 @@ body.open .header__toggle .toggle__line:last-child{
 
 
 /*hero*/
+@media screen and (min-width: 760px){
+    header{
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+        width: 100%;
+    }
+
+    .hero{
+        width: 100vw;
+        margin: 0;
+        position: absolute;
+        top: 0;
+    }
+
+    .hero__container{
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+    }
+
+    .hero__left{
+        width: 50%;
+        position: relative;
+        top: 178px;
+    }
+
+    .hero__right{
+        width: 50%;
+        margin: 0;
+        height: 100vh;
+    }
+
+    .right__contet{
+        position: absolute;
+        top: 315px;
+        right: 548px;
+        width: 500px;
+        height: 351px;
+        box-shadow: 0px 4px 57px rgba(0, 0, 0, 0.15);
+    }
+
+    .right__code{
+        width: 246px;
+        height: 275px;
+    }
+
+    .right__icons{
+        width: 58px;
+        height: 288px;
+    }
+
+    .right_img{
+        position: absolute;
+        right: 200px;
+        width: 516px;
+        height: 752px;
+    }
 
 
+    .rigth__img__back{
+        position: absolute;
+        right: 20px;
+            width: 878px;
+        height: 473px;
+    }
+}
 /*featured-in*/
 
 
