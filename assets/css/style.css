@@ -174,13 +174,59 @@ html {
     /*-----------------------------------*\
     #LANGUAGES MINI-SECTION
     \*-----------------------------------*/
-
+    .language__code{
+      margin-bottom: 70px;
+      background-color: red;
+    }
+    .language__info{
+      background-color: rgb(0, 110, 255);
+    }
+    .btn--motivationsStyle{
+        color: #DDF247;
+        justify-content: center;
+    }
 
 
     /*-----------------------------------*\
     #GET-UP MINI-SECTION
     \*-----------------------------------*/
+    .getUp{margin-bottom: 200px;}
+    .title-level-2--getUpStyle{text-align: center;}
+    
+    .getUp__written{padding: 50px 0;}
+    
+    .getUp__reasons{margin-top: 50px;}
 
+    .getUp__reasons .reason__single{
+      text-align: center;
+      margin-bottom: 100px;
+    }
+
+    .getUp__reasons .reason__single h4{
+      margin: 40px 0;
+      text-align: center;
+    }
+
+    .getUp__reasons .reason__single:nth-of-type(2){
+      margin-bottom: 30px;
+    } 
+
+    .getUp__reasons .reason__single img{
+      width: 40px;
+      height: 40px;
+    }
+
+    .getUp__image{
+      background-color: #000000;
+      height: 71vw;
+      padding: 15px 15px 0 15px;
+      border-radius: 9px;
+    }
+
+    .getUp__image img{
+      width: 100%;
+      height: 82vw;
+    }
 
 
 /*-----------------------------------*\
@@ -288,7 +334,86 @@ html {
 
 
     /*get-up*/
+    @media screen and (min-width: 465px) {
+      .getUp__image{
+        width: 370px;
+        height: 350px;
+        margin: 0 auto;
+      }
+  
+      .getUp__image img{
+        height: 400px;
+      }
+    }
 
+    @media screen and (min-width: 620px) {
+      .getUp__reasons{
+        display: flex;
+      }
+      .getUp__reasons .reason__single{
+        margin-right: 40px;
+      }
+      .getUp__reasons .reason__single:nth-of-type(2){
+        margin-right: 0;
+      } 
+    }
+
+    @media screen and (min-width: 850px) {
+      .getUp{
+        display: flex;
+        margin-top: 50px;
+      }
+
+      .title-level-2--getUpStyle{
+        margin-top: 68px;
+        text-align: left;
+        max-width: 350px;
+      }
+
+      .title-level-3--getUpStyle{
+        font-size: 2.7rem;
+      }
+
+      .desc-title--getUpStyle{
+        max-width: 260px;
+      }
+
+      .getUp__written{
+        width: 60vw;
+        padding: 0;
+        margin-right: 60px;
+      }
+
+      .getUp__reasons .reason__single{
+        margin-bottom: 0;
+        text-align: left;
+      }
+
+      .getUp__reasons .reason__single h4{
+        margin: 40px 0 20px 0;
+        text-align: left;
+      }
+
+      .getUp__image{
+        width: 400px;
+        height: 350px;
+      }
+  
+      .getUp__image img{
+        height: 400px;
+      }
+    }
+
+    @media screen and (min-width: 1000px) {
+      .getUp__image{
+        width: 400px;
+        height: 400px;
+      }
+  
+      .getUp__image img{
+        height: 450px;
+      }
+    }
 
 /*package*/
 
