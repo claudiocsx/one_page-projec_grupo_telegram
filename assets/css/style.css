@@ -313,10 +313,10 @@ html {
 /*-----------------------------------*\
   #FOOTER
 \*-----------------------------------*/
-.exemplo {
+/* .exemplo {
   height:500px;
   background-color: red;
-}
+} */
 
 .c-footer {
   width: 100%;
@@ -407,6 +407,17 @@ html {
   background-color: var(--first-color);
   cursor: pointer;
 }
+
+.footer__header-icon a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__header-icon i{
+  font-size: 2.5rem;
+}
+
 .footer__header-icon:hover {
   background-color: var(--first-color-alt-1);
 }
