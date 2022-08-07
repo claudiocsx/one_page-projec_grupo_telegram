@@ -188,11 +188,13 @@ html {
 \*-----------------------------------*/
 .package{
   font-family: var(--body-font-1);
+  
+  margin: 0 auto;
 }
 
 .package__container{
   text-align: center;
-  
+  margin-bottom: 370px;
 }
 
 .package__text{
@@ -200,7 +202,7 @@ html {
 
 }
 
-.package__text .package__title{
+/* .package__text .package__title{
   font-weight: 700;
   font-size: 4.8rem;
   margin-bottom: 50px;
@@ -211,7 +213,7 @@ html {
   font-size: 2.2rem;
   font-weight: 300;
   letter-spacing: 1px;
-}
+} */
 
 .package__tables {
   display: flex;
