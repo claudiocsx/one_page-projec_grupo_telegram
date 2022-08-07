@@ -22,13 +22,16 @@ tables.forEach((item, index) =>{
   #FAQS
 \*-----------------------------------*/
 
-const plusBall = document.querySelectorAll('.faqs__data-plusball')
-const minusBall = document.querySelectorAll('.faqs__data-minusball')
+const allItems = document.querySelectorAll('.faqs__data');
+const allPlusBalls = document.querySelectorAll('.faqs__data-plusball');
+const allMinusBalls = document.querySelectorAll('.faqs__data-minusball');
 
+console.log(allMinusBalls)
 
-function hideMinusBall(minusBall){
-    minusBall.forEach(mball=>{
-        mball.classList.add('hide')
+allItems.forEach(item=>{
+    console.log(item)
+    item.addEventListener('click', event=>{
+        event.currentTarget.classList.toggle('active')
     })
-}
+})
 
