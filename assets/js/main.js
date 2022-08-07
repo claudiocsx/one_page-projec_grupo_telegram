@@ -1,13 +1,13 @@
-const tables = document.querySelectorAll('.packge__table')
+const tables = document.querySelectorAll('.package__table')
 
 
- tables[1].classList.add('packge__table--dark')
+ tables[1].classList.add('package__table--dark')
 
  function activeBlackMode(index) {
     tables.forEach((table) => {
-        table.classList.remove('packge__table--dark')
+        table.classList.remove('package__table--dark')
     })
-    tables[index].classList.add('packge__table--dark')
+    tables[index].classList.add('package__table--dark')
 }
 
 
