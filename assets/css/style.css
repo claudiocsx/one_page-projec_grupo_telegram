@@ -100,7 +100,7 @@ html {
 
 .container {
     max-width: 144rem;
-    padding-inline: 5rem;
+    padding-inline: 1.6rem;
 }
 
 /*default h2 element*/
@@ -304,11 +304,102 @@ html {
   background-color: var(--first-color-alt-1);
   font-weight: 500;
 }
+
 /*-----------------------------------*\
   #FAQS
 \*-----------------------------------*/
 
+.faqs {
+  padding-top: 10rem;
+  padding-bottom: 20rem;
+}
 
+.faqs__title {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.faqs__data {
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  gap: 1rem;
+  padding-block: 3.6rem;
+  border-bottom: solid #E4E4E4 1px;
+}
+
+.faqs__data:last-child {
+  border-bottom: none;
+}
+
+.faqs__data-title {
+  grid-column: 1/2;
+  grid-row: 1/2
+}
+
+.faqs__data-desc {
+  grid-column: 1/3;
+  grid-row: 2/3;
+
+  max-width: 78.2rem;
+  font-family: var(--body-font-1);
+  font-size: 1.9rem;
+  font-weight: 300;
+  line-height: 2.28rem;
+}
+
+.faqs__data-plusball {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  grid-column: 2/3;
+  grid-row: 1/2;
+  align-self: center;
+
+  height: 3.2rem;
+  width: 3.2rem;
+  border-radius: 50%;
+  border: solid 1px black;
+  font-weight: 900;
+  color: var(--first-color);
+}
+
+.faqs__data-plusball i {
+  font-weight: inherit;
+  color: inherit;
+}
+
+/*classes animations*/
+/* .faqs__data-ball.active {
+  background-color: var(--first-color);
+  border: none;
+  color: var(--black-color);
+} */
+
+.faqs__data-minusball {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  grid-column: 2/3;
+  grid-row: 1/2;
+  align-self: center;
+
+  height: 3.2rem;
+  width: 3.2rem;
+  border-radius: 50%;
+  font-weight: 900;
+  background-color: var(--first-color);
+  color: var(--black-color);
+}
+
+.faqs__data-plusball.hide{
+  display: none;
+}
+
+.faqs__data-minusball.hide{
+  display: none;
+}
 
 /*-----------------------------------*\
   #FOOTER
@@ -491,14 +582,15 @@ html {
 \*-----------------------------------*/
 
 /*reusable classes*/
-@media screen and (min-width: 144rem) {
+@media screen and (min-width: 960px) {
   .container {
     margin-inline: auto;
+    padding-inline: 5rem;
   }
 }
 
 /*default description title element*/
-@media screen and (min-width: 96rem) {
+@media screen and (min-width: 960px) {
   .desc-title {
     font-family: var(--body-font-2);
   }
@@ -549,7 +641,25 @@ html {
 }
 
 /*faqs*/
+@media screen and (max-width: 960px) {
+  .faqs__data-title {
+    font-size: 2.1rem;
+    font-weight: 500;
+  }
+}
 
+@media screen and (min-width: 960px){
+  .faqs__data-title {
+    font-weight: 700;
+  }
+
+  .faqs__data-desc {
+    font-family: var(--body-font-3);
+    font-size: 1.6rem;
+    font-weight: 400;    
+  line-height: 2.2rem;
+  }
+}
 
 /*footer*/
 @media (min-width: 480px) {

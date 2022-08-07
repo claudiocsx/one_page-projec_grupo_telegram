@@ -17,3 +17,18 @@ tables.forEach((item, index) =>{
     })
     
 })
+
+/*-----------------------------------*\
+  #FAQS
+\*-----------------------------------*/
+
+const plusBall = document.querySelectorAll('.faqs__data-plusball')
+const minusBall = document.querySelectorAll('.faqs__data-minusball')
+
+
+function hideMinusBall(minusBall){
+    minusBall.forEach(mball=>{
+        mball.classList.add('hide')
+    })
+}
+
