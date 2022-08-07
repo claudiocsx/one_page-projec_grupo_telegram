@@ -218,24 +218,25 @@ html {
 .package__tables {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 50px;
+  gap: 40px;
 }
 
 .package__table {
   width: 393px;
   height: 488px;
   margin-top: 8rem;
+  padding: 3rem;
   background: #F4F4F4;
   border-radius: 10px;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, .2);
-  /* border: 1px solid black; */
+
+
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .package__title2 h2{
@@ -269,7 +270,7 @@ html {
 }
 
 .package__button{
-  width: 25.5rem;
+  width: 22rem;
   padding: 15px 29px;
   color: var(--first-color);
   background-color: var(--white-color);
