@@ -364,18 +364,19 @@ html {
   font-weight: 900;
   color: var(--first-color);
   cursor: pointer;
+  transition: 0.2s;
 }
 
 .faqs__data-plusball i {
   font-weight: inherit;
   color: inherit;
-  transition: 0.2s;
 }
 
 /*classes animations*/
 
 .faqs__data-plusball:hover {
   background-color: var(--grey-color);
+  transform: rotate(180deg);
 }
 
 .faqs__data-plusball:active {
@@ -402,10 +403,12 @@ html {
   background-color: var(--first-color);
   color: var(--black-color);
   cursor: pointer;
+  transition: 0.2s;
 }
 
 .faqs__data-minusball:hover {
   background-color: var(--first-color-alt-2);
+  transform: rotate(180deg);
 }
 
 .faqs__data-minusball:active {
