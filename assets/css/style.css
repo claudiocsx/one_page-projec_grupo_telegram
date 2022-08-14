@@ -170,63 +170,136 @@ html {
 /*-----------------------------------*\
   #MOTIVATIONS
 \*-----------------------------------*/
+  
+    
 
     /*-----------------------------------*\
     #LANGUAGES MINI-SECTION
     \*-----------------------------------*/
-    .language__code{
-      margin-bottom: 70px;
-      background-color: red;
-    }
-    .language__info{
-      background-color: rgb(0, 110, 255);
-    }
-    .btn--motivationsStyle{
-        color: #DDF247;
-        justify-content: center;
-    }
+      .language{
+        margin: 50px 0 30px 0;
+      }
+      .language__info{
+        margin-bottom: 70px;
+      }
+      .btn--motivationsStyle{
+          width: 100%;
+          color: #DDF247;
+          justify-content: center;
+          font-size: 1.4rem;
+          margin: 0 auto;
+      }
+      .language__code{
+        display: flex;
+        padding: 10px;
+        margin: 0 auto;
+        height: 170px;
+        border-radius: 5px;
+        background: #FFFFFF;
+        box-shadow: 0px 2.05981px 29.3523px rgba(0, 0, 0, 0.15);
+        width: 240px;
+      }
+      .info__sideBar{
+        background-color: #000000;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 30px;
+        height: 100%;
+        margin-right: 18px;
+        padding: 10px 0 3px 0;
+        border-radius: 2px;
+      }
+
+      .sideBar__iconsBox{
+        display: flex;
+        flex-direction: column;
+      }
+      .sideBar__iconsBox i{
+        margin-bottom: 5px;
+        font-size: 1.2rem;
+      }
+
+      .info__code{
+        font-size: 0.8rem;
+      }
+
+      .info__code--pink{
+        color: #F083C3;
+      }
+
+      .info__code--blue{
+        color: #807BED;
+      }
+
+      .loadingBox{
+        margin-top: 10px;
+      }
+
+      .loadingBox__loading{
+        height: 8px;
+        margin-bottom: 5px;
+        border-radius: 10px;
+        background-color: #E4E4E4;
+      }
+
+      .loading--1x{width: 60px;}
+      .loading--2x{width: 86px;}
+      .loading--3x{width: 150px;}
+
+      .triangleVector{
+        width: 50px;
+        height: 50px;
+        position: relative;
+        left: 140px;
+        bottom: 26px;
+      }
 
 
     /*-----------------------------------*\
     #GET-UP MINI-SECTION
     \*-----------------------------------*/
-    .getUp{margin-bottom: 200px;}
-    .title-level-2--getUpStyle{text-align: center;}
-    
-    .getUp__written{padding: 50px 0;}
-    
-    .getUp__reasons{margin-top: 50px;}
+      .title-level-2--getUpStyle{
+        text-align: center;
+      }
+      .getUp{margin-bottom: 200px;}
+      
+      .getUp__written{padding: 50px 0;}
+      
+      .getUp__reasons{margin-top: 50px;}
 
-    .getUp__reasons .reason__single{
-      text-align: center;
-      margin-bottom: 100px;
-    }
+      .getUp__reasons .reason__single{
+        text-align: center;
+        margin-bottom: 100px;
+      }
 
-    .getUp__reasons .reason__single h4{
-      margin: 40px 0;
-      text-align: center;
-    }
+      .getUp__reasons .reason__single h4{
+        margin: 40px 0;
+        text-align: center;
+      }
 
-    .getUp__reasons .reason__single:nth-of-type(2){
-      margin-bottom: 30px;
-    } 
+      .getUp__reasons .reason__single:nth-of-type(2){
+        margin-bottom: 30px;
+      } 
 
-    .getUp__reasons .reason__single img{
-      width: 40px;
-      height: 40px;
-    }
+      .getUp__reasons .reason__single img{
+        width: 40px;
+        height: 40px;
+      }
 
-    .getUp__image{
-      background-color: #000000;
-      height: 71vw;
-      padding: 15px 15px 0 15px;
-      border-radius: 9px;
-    }
+      .getUp__image{
+        background-color: #000000;
+        height: 71vw;
+        padding: 15px 15px 0 15px;
+        border-radius: 9px;
+      }
 
-    .getUp__image img{
-      width: 100%;
-      height: 82vw;
-    }
+      .getUp__image img{
+        width: 100%;
+        height: 82vw;
+      }
 
 
 /*-----------------------------------*\
@@ -331,7 +404,116 @@ html {
 /*motivations*/
 
     /*languages*/
+    @media screen and (min-width: 390px) {
+      .title-level-2--LanguageStyle{
+        text-align: center;
+      }
 
+      .desc-title--LanguageStyle{
+        text-align: center;
+      }
+
+      .btn--motivationsStyle{
+        width: auto;
+      }
+
+      .info__code{
+        font-size: 1rem;
+      }
+
+      .language__code{
+        height: 200px;
+        width: 280px;
+      }
+
+      .triangleVector{
+        width: 55px;
+        height: 55px;
+        left: 175px;
+        bottom: 20px;
+      }
+      .sideBar__iconsBox i{
+        font-size: 1.5rem;
+      }
+    }
+
+    @media screen and (min-width: 620px) {
+      .language{
+        margin: 50px 0 80px 0;
+      }
+      .language__info{
+        max-width: 600px;
+        margin: 0 auto;
+        margin-bottom: 70px;
+      }
+      .info__code{
+        font-size: 1.4rem;
+      }
+
+      .language__code{
+        height: 260px;
+        width: 450px;
+      }
+
+      .triangleVector{
+        width: 70px;
+        height: 70px;
+        left: 330px;
+        bottom: 30px;
+      }
+    }
+
+    @media screen and (min-width: 850px) {
+      .title-level-2--LanguageStyle{
+        text-align: left;
+      }
+      .desc-title--LanguageStyle{
+        text-align: left;
+      }
+      .language{
+        margin: 50px 0 30px 0;
+        display: flex;
+        flex-direction: row-reverse;
+      }
+      .language__code{
+        min-width: 350px;
+        width: 350px;
+        height: 260px;
+        margin-right: 80px;
+      }
+      .triangleVector{
+        width: 80px;
+        height: 80px;
+        left: 250px;
+        bottom: 170px;
+      }
+      .btn--motivationsStyle{
+        color: white;
+        margin: 0;
+        font-size: 2.1rem;
+      }
+    }
+
+    @media screen and (min-width: 950px) {
+      .language__code{
+        margin-right: 120px;
+      }
+      .language__info{
+        max-width: 400px;
+      }
+      .language{
+        width: max-content;
+        margin: 50px auto 30px auto;
+      }
+      .language__code{
+        width: 430px;
+      }
+      .triangleVector{
+        width: 100px;
+        height: 100px;
+        left: 320px;
+      }
+    }
 
     /*get-up*/
     @media screen and (min-width: 465px) {
