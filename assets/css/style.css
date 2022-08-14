@@ -517,6 +517,8 @@ html {
   border-radius: 50%;
   background-color: var(--first-color);
   cursor: pointer;
+  font-size: 3rem;
+  line-height: 0;
 }
 
 .footer__header-icon a{
@@ -531,6 +533,31 @@ html {
 
 .footer__header-icon:hover {
   background-color: var(--first-color-alt-1);
+}
+
+@keyframes go-back {
+  0% {
+    transform: translateX(0px);
+  }
+
+  25% {
+    transform: translateX(8px);
+  }
+
+  50% {
+    transform: translateX(4px);
+  }
+
+  75% {
+    transform: translateX(8px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.footer__header-icon a i:hover {
+  animation: go-back 1s;
 }
 
 .footer__header-title {
@@ -748,6 +775,10 @@ html {
 
   .aside__btn-base {
     font-size: 2.2rem;
+  }
+
+  .bx-right-top-arrow-circle:before {
+    font-size: 2.5rem;
   }
 
   .footer__info {
