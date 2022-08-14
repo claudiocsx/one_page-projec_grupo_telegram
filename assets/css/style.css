@@ -238,16 +238,30 @@ html {
         margin-top: 10px;
       }
 
+      .pointer{animation: pointerAnimation 1s infinite;}
+
+      @keyframes pointerAnimation {
+        from {opacity: 1;}
+        to {opacity: 0;}
+      }
+
       .loadingBox__loading{
         height: 8px;
         margin-bottom: 5px;
         border-radius: 10px;
         background-color: #E4E4E4;
+        animation: loadingAnimation .8s infinite;
       }
 
       .loading--1x{width: 60px;}
       .loading--2x{width: 86px;}
       .loading--3x{width: 150px;}
+
+      @keyframes loadingAnimation{
+        0% {background-color: #E4E4E4;}
+        50% {background-color: #f0f0f0;}
+        100% {background-color: #E4E4E4;}
+      }
 
       .triangleVector{
         width: 50px;
@@ -451,7 +465,7 @@ html {
       }
 
       .language__code{
-        height: 260px;
+        height: 270px;
         width: 450px;
       }
 
@@ -461,6 +475,12 @@ html {
         left: 330px;
         bottom: 30px;
       }
+      .loadingBox__loading{
+        height: 12px;
+      }
+      .loading--1x{width: 95px;}
+      .loading--2x{width: 150px;}
+      .loading--3x{width: 250px;}
     }
 
     @media screen and (min-width: 850px) {
@@ -478,7 +498,7 @@ html {
       .language__code{
         min-width: 350px;
         width: 350px;
-        height: 260px;
+        height: 280px;
         margin-right: 80px;
       }
       .triangleVector{
@@ -492,6 +512,12 @@ html {
         margin: 0;
         font-size: 2.1rem;
       }
+      .loadingBox__loading{
+        height: 12px;
+      }
+      .loading--1x{width: 95px;}
+      .loading--2x{width: 150px;}
+      .loading--3x{width: 250px;}
     }
 
     @media screen and (min-width: 950px) {
