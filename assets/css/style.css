@@ -528,6 +528,12 @@ html {
 
 
 /*package*/
+@media (max-width: 970px) {
+  .packages {
+    flex-direction: column;
+  }
+}
+
 @media (max-width: 600px) {
 /*   html 
   {
