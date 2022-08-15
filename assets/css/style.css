@@ -188,11 +188,13 @@ html {
 \*-----------------------------------*/
 .package{
   font-family: var(--body-font-1);
+  
+  margin: 0 auto;
 }
 
-.packge__container{
+.package__container{
   text-align: center;
-  
+  margin-bottom: 370px;
 }
 
 .package__text{
@@ -200,57 +202,45 @@ html {
 
 }
 
-.package__text .packge__title{
-  font-weight: 700;
-  font-size: 4.8rem;
-  margin-bottom: 50px;
-  
-}
-
-.packge__subtitle{
-  font-size: 2.2rem;
-  font-weight: 300;
-  letter-spacing: 1px;
-}
-
-.packge__tables {
+.package__tables {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 50px;
+  gap: 40px;
 }
 
-.packge__table {
+.package__table {
   width: 393px;
   height: 488px;
   margin-top: 8rem;
+  padding: 3rem;
   background: #F4F4F4;
   border-radius: 10px;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, .2);
-  /* border: 1px solid black; */
+
+
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
-.packge__title2 h2{
+.package__title2 h2{
   font-weight: 400;
   font-size: 2.4rem;
   letter-spacing: 0.25px;
 }
 
-.packge__table span img{
+.package__table span img{
  display: none;
 }
 
-.packge__price h4{
+.package__price h4{
   width: 9rem;
   position: relative;
 }
-.packge__price h4 span.sign{
+.package__price h4 span.sign{
   font-size: 2rem;
   font-weight: 400;
   position: absolute;
@@ -258,16 +248,16 @@ html {
   left: 0;
 }
 
-.packge__price h4 span{
+.package__price h4 span{
   font-size: 4.8rem;
 }
-.packge__option ul li{
+.package__option ul li{
   font-weight: 200;
   font-size: 2.2rem;
 }
 
-.packge__button{
-  width: 25.5rem;
+.package__button{
+  width: 22rem;
   padding: 15px 29px;
   color: var(--first-color);
   background-color: var(--white-color);
@@ -275,14 +265,14 @@ html {
   box-shadow: 17px 14px 13px rgb(0 0 0 / 12%);
 }
 
-.packge__table--dark {
+.package__table--dark {
   transition: .7s;
   color: var(--white-color);
   background-color: var(--second-color);
   
 }
 
-.packge__table--dark span img{
+.package__table--dark span img{
   transition: .7s;
   display: inline-block;
   position: absolute;
@@ -291,16 +281,16 @@ html {
   width: 50px;
 }
 
-.packge__table--dark:hover{
+.package__table--dark:hover{
   transform: scale(1.05);
 } 
 
-.packge__table--dark .packge__button{
+.package__table--dark .package__button{
   color: var(--black-color);
   background-color: var(--first-color);
 }
 
-.packge__table--dark .packge__button:hover{
+.package__table--dark .package__button:hover{
   background-color: var(--first-color-alt-1);
   font-weight: 500;
 }
@@ -667,6 +657,13 @@ html {
 
 
 /*package*/
+@media (max-width: 1100px) {
+  .package__tables {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 @media (max-width: 600px) {
 /*   html 
   {
@@ -678,12 +675,12 @@ html {
     margin: 5.8rem 4rem 1rem 4rem;
   
   }
-  .packge__subtitle
+  .package__subtitle
   {
     font-size: 2.2rem;
     line-height: 2.5rem;
   }
-  .packge__table 
+  .package__table 
   {
     width: 343px;
     height: 478.28px;
